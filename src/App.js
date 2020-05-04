@@ -1,15 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./components/Header.js";
+import LoginForm from "./components/LoginForm.js";
 
-function App() {
-  const todos = ['todo1', 'todo2', 'todo3'];
-  const reactTodos = todos.map((todo) => <li>{todo}</li>);
-  return (
-    <div id="root">
-      <ul>{reactTodos}</ul>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <LoginForm />
+      </div>
+    );
+  }
 }
 
 export default App;
