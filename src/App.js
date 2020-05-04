@@ -5,10 +5,11 @@ import LoginForm from "./components/LoginForm.js";
 
 class App extends Component {
   render() {
+    const defaultEmail = "abc@coders-x.com";
     return (
       <div className="App">
         <Header />
-        <LoginForm />
+        <LoginForm email={defaultEmail} />
       </div>
     );
   }

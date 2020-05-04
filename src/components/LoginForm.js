@@ -10,7 +10,7 @@ class LoginForm extends Component {
           <div>
             <label for="user">Username</label>
             <br />
-            <input type="text" id="user" name="user" />
+            <input type="text" id="user" name="user" value={this.props.email} />
           </div>
           <div>
             <label for="password">Password</label>
